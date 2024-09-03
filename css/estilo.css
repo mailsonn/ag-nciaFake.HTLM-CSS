@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background: white;
+    justify-content: center;
+    align-items: center; /*alinha no sentido vertical*/
+    position: fixed;
+    width: 100%; /*devido a usar o position, isso vai garantir o tamanho certo*/
+}
+
+.logo {
+    flex: 20%;
+    /* border: solid red 1px; */
+    text-align: left;
+    padding: 20px;
+    padding-left: 0;
+    margin-left: 10%;
+}
+
+.logo h1{
+    font-family: "Lobster", sans-serif;
+    color: #180f4a;
+    font-size: 34px;
+    
+}
+
+.menu {
+    flex: 70%;
+    /* border: solid rgb(58, 226, 43) 2px; */
+    text-align: right;
+}
+
+.menu a{
+    color: #180F4A;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 16px;
+}
+
+.menu a:hover{
+    color: #FF2978;
+    border-top: solid #180F4a 4px ;
+}
+
+#botao {
+    background: #180F4A;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+#botao:hover{
+    border: none;
+    background: #FF2978;
+}
+
+.header{  /*elemento pai*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding-top: 100px;
+}
+
+.headline{
+    flex: 40%; /*usa-se o flex: A% pra dividir a tela, porém a "classe pai" deve estar com display:flex*/
+    margin-left: 10%;
+    
+}
+
+.contact-btn{
+    display: inline-block; /*pra controlar ele desloca-lo pra baixo "BLOCOS"*/
+    background: #FF2978;
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.contact-btn:hover{
+    background: #180F4A;
+}
+
+.headline p{
+    color: gray;
+    text-align: left;
+}
+
+.img-headline {
+    flex: 40%; /*usa-se o flex pra outra metade*/
+    margin-right: 10%;
+    /* border: solid red 1px; */
+    text-align: center;
+}
+
+.img-hero {
+    max-width: 90%;
+}
+
+.headline h2{
+    font-weight: 900;
+    font-size: 20px;
+    color: #180F4A;
+    padding: 0;
+    margin: 0;
+}
+
+section{
+    display: inline-block;
+    margin-top: 80px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    padding: 5%;
+    
+}
+
+section h2{
+    width: 100%;  /*o h2 preenche o tamanho total da caixa*/
+    font-size: 50px;
+    margin: 0;
+    font-family: "Lobster", sans-serif;
+    font-weight: bold;
+    color: #180F4A;
+}
+
+.servicos{
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.card{
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border: solid 1px #FF2978;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.texto-oculto{
+    display: none;
+}
+
+
+.card:hover{
+    background: #FF2978;
+    color: white;
+    padding: 40px;
+}
+
+.card:hover img{
+    display: none;
+}
+
+.card:hover .card-text{
+    display: none;
+}
+
+.card:hover .texto-oculto{
+     display: block;
+}
+
+footer{
+    margin-top: 100px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(180deg,#180f4A, #090422, black);
+    text-align: center;
+    border-top: 5px solid #FF2978;
+}
+
+.logo-rodape{
+    padding: 100px;
+}
+
+.agencia{
+    font-family: "Lobster", sans-serif;
+    color: white;
+    font-size: 34px;
+}
+
+.whats{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    width: 100px;
+}
